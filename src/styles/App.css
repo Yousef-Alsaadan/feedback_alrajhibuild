@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+/*----Lama Sans Fonts-----*/
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Thin.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-ExtraLight.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Light.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Regular.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Medium.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-SemiBold.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Bold.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-ExtraBold.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lama Sans';
+  src: url('/fonts/LamaSans/LamaSans-Black.woff2') format('woff2'),
+    url('/fonts/LamaSans/LamaSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/*----Bizo Fonts-----*/
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Extra Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Semi Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Extra Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bizmo';
+  src: url('/fonts/Bizmo/Bizmo Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*----Theme-----*/
+
+@theme {
+  --font-lama: 'Lama Sans', sans-serif;
+  --font-bizmo: 'Bizmo', sans-serif;
+
+  --color-blue-black: linear-gradient(160deg, rgba(28, 72, 146, 1) 0%, rgba(0, 0, 0, 1) 130%);
+  --color-blue-brown: linear-gradient(160deg, rgba(28, 72, 146, 1) 0%, rgba(182, 143, 99, 1) 130%);
+  --color-blue-brown-revers: linear-gradient(180deg, rgba(28, 72, 146, 1) 0%, rgba(182, 143, 99, 1) 130%);
+  --color-gray-white: linear-gradient(140deg, rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  --color-white-transparent: linear-gradient(180deg, white 0%, transparent 100%);
+  --color-brown-white: linear-gradient(-24deg, white -5%, rgba(182, 143, 99, 1) 100%);
+  --color-brown-white-revers: linear-gradient(-24deg, rgba(182, 143, 99, 1) -5%, white 100%);
+
+  --color-base-100: #FFFFFF;
+  --color-base-200: oklch(98% 0 0);
+  --color-base-300: oklch(95% 0 0);
+  --color-base-content: oklch(21% 0.006 285.885);
+  --color-primary: #1c4892;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #b68f63;
+  --color-secondary-content: #000000;
+  --color-accent: #CCCCCC;
+  --color-accent-content: #000000;
+  --color-neutral: #000000;
+  --color-neutral-content: #FFFFFF;
+  --color-info: #A6BBDB;
+  --color-info-content: #000000;
+  --color-success: #1C9238;
+  --color-success-content: #FFFFFF;
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: #921C26;
+  --color-error-content: #FFFFFF;
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+
+  --animate-scroll-carousel-ltr: scroll-carousel-ltr 80s linear infinite;
+  --animate-scroll-carousel-rtl: scroll-carousel-rtl 80s linear infinite;
+
+  @keyframes scroll-carousel-ltr {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 1rem));
+    }
+  }
+
+  @keyframes scroll-carousel-rtl {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(50% + 1rem));
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroller {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller .scroller__inner {
+  width: max-content;
+  display: flex;
+}
+
+.scroller[data-animated="true"] .scroller__inner:hover {
+  animation-play-state: paused;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  will-change: transform;
+}
+
+.animate-scroll-carousel-ltr {
+  animation: var(--animate-scroll-carousel-ltr);
+}
+
+.animate-scroll-carousel-rtl {
+  animation: var(--animate-scroll-carousel-rtl);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
