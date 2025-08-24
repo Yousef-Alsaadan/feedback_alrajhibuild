@@ -465,7 +465,7 @@ const App = () => {
     App: "",
   });
 
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xblkvard";
+  const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
   const nextStep = () => {
     if (currentStep < 5) {
